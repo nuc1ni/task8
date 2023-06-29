@@ -7,21 +7,22 @@
 
 }
 .background-image { 
-    height: 2000px;
-    background-size: cover;
-    animation-name: sea;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+    width: 100%;
+    height: 500px;
+    
 }
 .animation {
     position: relative;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
 
 }
 .birds {
     position: absolute;
     right: 0;
     top: 0;
-    height: 200px;
+    height: 300px;
     animation-name: birds;
     animation-duration: 7s;
     animation-timing-function: ease-in;
@@ -34,9 +35,7 @@
 }
 .sun {
     position: absolute;
-    margin-left: 850px;
-    margin-bottom: 330px;
-    
+    margin-left: 500px;
     animation-name: sun;
     animation-duration: 7s;
     animation-delay: 1s;
@@ -47,9 +46,9 @@
 .boat {
     position: absolute;
     height: 300px;
-    margin-left: 200px;
     margin-top: 500px;
-    animation: boat 10s ease-in-out 1s infinite ;
+    margin-left: 200px;
+    animation: boat 10s linear 1s infinite ;
 }
 
 @keyframes birds {
@@ -72,4 +71,16 @@
 @keyframes boat {
     from {left:0px;}
     to {left: 1200px;}
+    0%   {top: 0px;}
+    10%   {top: 20px;}
+    20%   {top: 0px;}
+    30%  {top: 20px;}
+    40%   {top: 0px;}
+    50%  {top: 20px;}
+    60%   {top: 0px;}
+    70%  {top: 20px;}
+    80%   {top: 0px;}
+    90%  {top: 20px;}
+    100%   {top: 0px;}
+    
 }
